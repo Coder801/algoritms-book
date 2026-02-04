@@ -1,49 +1,43 @@
 {
   "name": "algoritms-book",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --hot --inline",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "^21.1.0",
+    "@angular/compiler": "^21.1.0",
+    "@angular/core": "^21.1.0",
+    "@angular/forms": "^21.1.0",
+    "@angular/platform-browser": "^21.1.0",
+    "@angular/router": "^21.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "css-loader": "^0.28.9",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
-    "font-loader": "^0.1.2",
-    "html-webpack-plugin": "^2.30.1",
-    "node-sass": "^4.7.2",
-    "pug": "^2.0.0-rc.4",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.1",
-    "url-loader": "^0.6.2",
-    "vue": "^2.5.13",
-    "vue-html-loader": "^1.2.4",
-    "vue-loader": "^14.1.1",
-    "vue-template-compiler": "^2.5.13",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Coder801/algoritms-book.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Coder801/algoritms-book/issues"
-  },
-  "homepage": "https://github.com/Coder801/algoritms-book#readme",
-  "dependencies": {
-    "semantic-superhero-ui-css": "^1.0.10",
-    "semantic-ui": "^2.2.14",
-    "semantic-ui-css": "^2.2.14",
-    "semantic-ui-vue": "^0.1.7"
+    "@angular/build": "^21.1.2",
+    "@angular/cli": "^21.1.2",
+    "@angular/compiler-cli": "^21.1.0",
+    "jsdom": "^27.1.0",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
   }
 }
